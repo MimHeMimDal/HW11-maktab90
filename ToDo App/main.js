@@ -1,7 +1,6 @@
-let body = document.querySelector('body');
-let h1 = document.createElement('h1');
-h1.textContent = "Hello"
+import "./src/styles/index.css";
+import App from "./src/App";
+import RenderTable from "./src/library/RenderTable";
 
-body.append(h1);
-
-console.log(body);
+document.body.appendChild(App());
+RenderTable(JSON.parse(localStorage.getItem("state")));
