@@ -55,6 +55,10 @@ function Header() {
               element: "ion-icon",
               name: "funnel",
               className: "text-2xl",
+              onclick: (e) => {
+                document.getElementById("asideContainer").hidden =
+                  !document.getElementById("asideContainer").hidden;
+              },
             }),
           }),
           Button({

@@ -53,8 +53,8 @@ function EditModal(item, disabled) {
                   ElementGenerator({
                     element: "option",
                     child: item.priority,
-                    name: "Priority",
-                    value: "Priority",
+                    name: item.priority,
+                    value: item.priority,
                   }),
                   ElementGenerator({
                     element: "option",
@@ -87,8 +87,8 @@ function EditModal(item, disabled) {
                   ElementGenerator({
                     element: "option",
                     child: item.status,
-                    name: "Status",
-                    value: "Status",
+                    name: item.status,
+                    value: item.status,
                   }),
                   ElementGenerator({
                     element: "option",
@@ -200,7 +200,7 @@ function EditModal(item, disabled) {
                       return el;
                     }
                   });
-                  localStorage.setItem("state", JSON.stringify([...oldState]));
+                  localStorage.setItem("state", JSON.stringify(oldState));
 
                   editTaskNameInput.value = "";
                   Status.value = "Status";

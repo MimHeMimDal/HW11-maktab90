@@ -62,7 +62,6 @@ function Table() {
       ElementGenerator({ element: "thead", id: "tbody", className: "border" }),
     ],
   });
-  console.log(table);
   return table;
 }
 

@@ -6,7 +6,7 @@ function HandleDelete(e) {
     (item) => item.id !== trID
   );
   localStorage.setItem("state", JSON.stringify(newState));
-  RenderTable(localStorage.getItem("state"));
+  RenderTable(JSON.parse(localStorage.getItem("state")));
 }
 
 export default HandleDelete;
