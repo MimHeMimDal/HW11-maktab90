@@ -14,9 +14,9 @@ function ElementGenerator({ element, variant, child, ...rest }) {
   if (variant) {
     elem.className += variants[variant];
   }
-  if (child) {
-    Array.isArray(child) ? elem.append(...child) : child && elem.append(child);
-  }
+
+  Array.isArray(child) ? elem.append(...child) : child && elem.append(child);
+
   return elem;
 }
 
